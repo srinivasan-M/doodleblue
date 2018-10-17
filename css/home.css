@@ -1,0 +1,285 @@
+.root_div{
+    background: #1a67e7;
+    overflow: hidden;
+    height:100vh;
+}
+.sidenav {
+    width: 260px;
+    background-color: white;
+    transition: 0.5s;
+    height: calc(100% - 75px);
+}
+.menu_container{
+    height:100%;
+    background-color: #1a67e7;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+    background-image: linear-gradient(to bottom,#1a67e7,violet)
+}
+.horizontalNavBar{
+    width: 100%;
+    
+}
+.content{
+    width: calc(100% - 260px);
+    background: white;
+    height: calc(100% - 75px);
+    border-radius: 6px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 2px 0px #ccc;
+}
+.btn{
+    background: #0d326d;
+    border: 1px solid #0d326d;
+    width: 40px;
+    height: 40px;
+}
+.rounded-circle{
+    border-radius: 50%;
+}
+.icon_color{
+    color: white;
+}
+.navbar{
+    background: #1a67e7;
+    clip-path: polygon(100% 0, 105% 27%, 99% 100%, 0 100%, 0 0);
+}
+.navbar-light .navbar-brand{
+    color: white;
+}
+.left_content{
+    box-shadow: 0px 0px 5px 0px #0000000f;
+    border-top-left-radius: 6px;
+}
+.business_list li a.active,.commission_list li a.active,.claims_list li a.active{
+    color: black;
+}
+.business_list li a,.commission_list li a,.claims_list li a{
+    color: lightgray;
+}
+.right_content{
+    background: #ffffff;
+    border-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.leftSide{
+    background: #ffffff;
+    
+}
+.rightSide{
+    background: #ffffff;
+}
+.name,.rank{
+    font-size: 20px;
+    padding: 2%;
+}
+.today_date{
+    margin-left: 11%;
+}
+.normal_text{
+    font-size:12px;
+}
+.badge{
+    background-color: #27ad66;
+}
+.font_fourteen{
+    font-size: 14px;
+}
+.font_thirteen{
+    font-size:13px;
+}
+.cmd{
+    position: absolute;
+    right:10%;
+}
+.commission_year,.claim_total{
+    position:absolute;
+    right:0;
+    font-size: 13px;
+}
+.fa-calendar-alt,.fa-calendar{
+    color:#23d0c8;
+}
+.existing_user{
+    color: #2da7dd;
+}
+.acquired_user{
+    color:#eb4943
+}
+.border_btn{
+    border: 1px solid #fff;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px 3px #0000000f;
+}
+.card_btn{
+    border:1px solid #fff;
+    border-radius: 2px;
+    height: 35%;
+    box-shadow: 0px 0px 5px 3px #0000000f;
+}
+.text_color{
+    color:#6e6e6e;
+}
+.text_opacity{
+    opacity:0.7;
+}
+.text_size{
+    font-size: 20px;
+}
+.vertical_line{
+    border: 1px solid red;
+}
+.news_feed{
+    border: 1px solid #008b8b21;
+    background: #fcfcfc;
+}
+.vertical_menu{
+    cursor: pointer;
+}
+.closebtn{
+    display: none !important;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.profile_details{
+    padding: 0px 8px 8px 32px;
+}
+.profile_photo{
+    border: 1px solid white;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    font-size: 36px;
+    position: absolute;
+    top: 3%;
+    right: 6%;
+    color: white;
+}
+.carousel-inner img {
+    width: 65%;
+    height: 15%;
+}
+
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    margin-left: 3px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: lightgray;
+}
+	
+.carousel-indicators .active {
+    background-color: darkcyan;
+}
+.carousel-inner{
+    margin-left:20%;
+}
+.carousel-indicators{
+    position:absolute;
+    top:102%;
+}
+.menus{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 69%;
+}
+.menus a:hover{
+    background: black;
+}
+.menu_list{
+    width: fit-content;
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top:10px;
+}
+.menus li:hover{
+    background: #3f9eed;
+}
+@media only screen and (max-width: 991px) {
+    .sidenav{
+        width: 0px;
+        clip-path: none;
+        position: absolute;
+        z-index: 9999;
+        height: 100vh;
+        background: #1a67e7;
+    }
+    .menu_container{
+        display: none;
+        margin-top: 26%;
+        clip-path: none;
+        position: absolute;
+        z-index: 9999;
+    }
+    .menu_logo{
+        display: block !important;
+    }
+    .vertical_menu{
+        display: block !important;
+    }
+    .logo{
+        display: none;
+    }
+    .closebtn{
+        display: block !important;
+    }
+    .content{
+        background: #fcfcfc !important;
+        width: 100% !important;
+    } 
+    .navbar{
+        clip-path: none;
+    }
+}
+@media only screen and (max-width:1478px){
+    .vertical_line{
+        display: none;
+    }
+    .appointment_right,.appointment_left,.leaderboard_div{
+        border-radius: 3px !important;
+    }
+}
+@media only screen and (max-width:790px){
+    .right_content{
+        margin-top: 12%;
+    }
+    .appointment_right,.business_chart_right,.claims_chart_right{
+        margin-left: 0px !important;
+    }
+}
+@media only screen and (max-width:1030px){
+
+    .navbar_list{
+        margin-right:0px !important;
+    }
+}
+@media only screen and (max-width:440px){
+    .navbar_list li{
+        margin-left:0px !important;
+    }
+    .help_line{
+        border-radius:25px !important;
+    }
+    .help_line_text{
+        display: none;
+    }
+    .rank{
+        width:40% !important;
+    }
+}
